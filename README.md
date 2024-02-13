@@ -1,0 +1,1 @@
+# muse-sounds-manager-nix
