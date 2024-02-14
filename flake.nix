@@ -60,7 +60,8 @@
             meta = with pkgs.lib; {
               description = "A download manager for Muse Sounds.";
               homepage = "https://www.musehub.com";
-              license = licenses.unfree;
+              # uncommented for now until I figured out how to integrate this properly
+              # license = licenses.unfree;
               platforms = platforms.linux;
             };
           };
