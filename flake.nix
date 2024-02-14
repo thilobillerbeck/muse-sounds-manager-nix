@@ -1,5 +1,5 @@
 {
-  description = "A simple Go package";
+  description = "Muse Sounds Manager (unofficial)";
   inputs.nixpkgs.url = "nixpkgs/nixos-unstable";
 
   outputs = { self, nixpkgs }:
