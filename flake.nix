@@ -35,8 +35,9 @@
           };
         in
         {
-          muse-sounds-manager =  pkgs.buildFHSEnv {
-            name = "muse-sounds-manager";
+          muse-sounds-manager = pkgs.buildFHSEnv {
+            pname = "muse-sounds-manager";
+            version = version;
 
             targetPkgs = pkgs: with pkgs; [
               xorg.libX11
@@ -55,6 +56,13 @@
             '';
 
             runScript = "${muse-sounds-manager-bin}/Muse.Client.Linux";
+
+            meta = with pkgs.lib; {
+              description = "A download manager for Muse Sounds.";
+              homepage = "https://www.musehub.com";
+              license = licenses.unfree;
+              platforms = platforms.linux;
+            };
           };
         });
 
