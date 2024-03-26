@@ -18,7 +18,7 @@
             nativeBuildInputs = with pkgs; [ rpmextract ];
 
             src = pkgs.fetchurl {
-              url = "https://web.archive.org/web/20240213215205/https://muse-cdn.com/Muse_Sounds_Manager_Beta.rpm";
+              url = "https://web.archive.org/web/20240326225236/https://muse-cdn.com/Muse_Sounds_Manager_Beta.rpm";
               sha256 = "sha256-GQLJt3j8LLRTQ4E59vz75IAp9ePetap7RFvat0umifs=";
             };
 
